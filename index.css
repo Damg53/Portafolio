@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(150deg, #6C3483, #58D68D);
+    min-height: 100vh;
+}
+
+.header {
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+.header__foto-perfil {
+    margin-bottom: 20px;
+}
+
+.header__imagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.header__imagen:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header__nombre {
+    margin: 5px 0 0;
+    font-size: 1.5rem;
+}
+
+.header__titulo {
+    margin: 5px 0 0;
+    font-size: 1.25rem;
+}
+
+.navegacion {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+.navegacion__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    flex-wrap:5mm;
+}
+
+
+.navegacion__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.navegacion__link:hover {
+    transform: translateY(-3px);
+    color: #00bfff;
+    background-color: rgba(0, 191, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.3);
+}
+
+.navegacion__link--activo {
+    background-color: #00bfff;
+    color: white;
+}
+
+.navegacion__link--activo:hover {
+    background-color: #0099cc;
+    color: white;
+}
+
+
+.sobre-mi__titulo {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sobre-mi__contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.sobre-mi__columna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 600px;
+    max-width: 8000px;
+}
+
+.sobre-mi__tarjeta {
+    background-color:#4AE3B5;
+    color: black;
+    padding: 10px;
+    border-radius: 15px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid #000000;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+}
+
+.sobre-mi__tarjeta:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    border-color: #00bfff;
+    background-color: #004dc7;
+    color: white;
+}
+
+.sobre-mi__titulo-tarjeta {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+}
+
+.sobre-mi__texto {
+    margin: 0;
+    line-height: 1.6;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.sobre-mi__lista {
+    padding-left: 20px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.sobre-mi__item-lista {
+    margin-bottom: 6px;
+}
+

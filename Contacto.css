@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(150deg, #6C3483, #58D68D);
+    min-height: 100vh;
+}
+
+.header {
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+.header__perfil {
+    margin-bottom: 20px;
+}
+
+.header__imagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.header__imagen:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header__nombre {
+    margin: 5px 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header__titulo {
+    margin: 5px 0 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.navegacion {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+.navegacion__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    flex-wrap:5mm;
+}
+
+
+.navegacion__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.navegacion__link:hover {
+    transform: translateY(-3px);
+    color: #00bfff;
+    background-color: rgba(0, 191, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.3);
+}
+
+.navegacion__link--activo {
+    background-color: #00bfff;
+    color: white;
+}
+
+.navegacion__link--activo:hover {
+    background-color: #0099cc;
+    color: white;
+}
+
+
+.principal {
+    padding: 20px;
+}
+
+.seccion {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.seccion__titulo {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #4AE3B5;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.contacto__elemento {
+    display: flex;
+    align-items: center;
+    background-color: rgba(233, 245, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contacto__elemento:hover {
+    transform: translateY(-5px) scale(1.02);
+    background-color: rgba(215, 239, 255, 0.95);
+    border-color: #00bfff;
+    box-shadow: 0 8px 25px rgba(0, 191, 255, 0.3);
+}
+.contacto__icono {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00bfff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.contacto__elemento:hover .contacto__icono {
+    background-color: #0099cc;
+}
+
+.contacto__icono--correo::before {
+    content: "📧";
+}
+
+.contacto__icono--github::before {
+    content: "💻";
+}
+
+.contacto__icono--telefono::before {
+    content: "📱";
+}
+
+.contacto__icono--ubicacion::before {
+    content: "📍";
+}
+
+.contacto__icono--personalizado {
+    background-color: transparent;
+    padding: 5px;
+}
+
+.contacto__imagen-personalizada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.contacto__contenido {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contacto__subtitulo {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contacto__enlace {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.contacto__enlace::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #0077ff;
+    transition: width 0.3s ease;
+}
+
+.contacto__enlace:hover {
+    color: #0077ff;
+    transform: translateX(5px);
+}
+
+.contacto__enlace:hover::after {
+    width: 100%;
+}
+
+.contacto__texto {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 500;
+}
